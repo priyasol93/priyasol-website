@@ -15,7 +15,7 @@ export default function HeroSection() {
             Apply Now
           </Button>
           <Button variant="outlined" size="large" sx={{ mx: 1 }}>
-            Download Brochure
+            Download 
           </Button>
         </Box>
       </Container>
