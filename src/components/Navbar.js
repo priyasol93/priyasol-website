@@ -1,33 +1,27 @@
 import React from "react";
-import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
-import {Link as RouterLink} from "react-router-dom";
-// import { Link as RouterLink } from "react-router-dom";
+import { AppBar, Toolbar, Typography, Box, Button } from "@mui/material";
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
 
-function Navbar() {
+const Navbar = () => {
   return (
-    <AppBar position="static" color="primary">
-      <Toolbar sx={{ justifyContent: "space-between" }}>
-        <Typography variant="h6" component="div">
-          PriyaSol IT Solutions
-        </Typography>
-
+    <AppBar position="static" sx={{ backgroundColor: "white", boxShadow: 1 }}>
+      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+        <Box display="flex" alignItems="center">
+          <img src={logo} alt="PriyaSol Logo" style={{ height: 40, marginRight: 10 }} />
+          {/* <Typography variant="h6" sx={{ color: "#1c1c3c", fontWeight: "bold" }}>
+            PriyaSol IT Solutions
+          </Typography> */}
+        </Box>
         <Box>
-          <Button color="inherit" component={RouterLink} to="/">
-            Home
-          </Button>
-          <Button color="inherit" component={RouterLink} to="/programs">
-            Programs
-          </Button>
-          <Button color="inherit" component={RouterLink} to="/about">
-            About
-          </Button>
-          <Button color="inherit" component={RouterLink} to="/contact">
-            Contact
-          </Button>
+          <Button component={Link} to="/" sx={{ color: "#1c1c3c" }}>Home</Button>
+          <Button component={Link} to="/programs" sx={{ color: "#1c1c3c" }}>Programs</Button>
+          <Button component={Link} to="/about" sx={{ color: "#1c1c3c" }}>About</Button>
+          <Button component={Link} to="/contact" sx={{ color: "#1c1c3c" }}>Contact</Button>
         </Box>
       </Toolbar>
     </AppBar>
   );
-}
+};
 
 export default Navbar;
