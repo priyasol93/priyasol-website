@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
-// import heroBanner from "../assets/hero-banner.png";
+import heroBanner from "../assets/hero-banner.jpg";
 
 const Hero = () => {
   return (
@@ -32,9 +32,9 @@ const Hero = () => {
             Join Now
           </Button>
         </Grid>
-        {/* <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6}>
           <img src={heroBanner} alt="Hero" style={{ width: "100%", maxHeight: "400px" }} />
-        </Grid> */}
+        </Grid>
       </Grid>
     </Box>
   );
