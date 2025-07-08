@@ -11,11 +11,11 @@ const testimonials = [
     feedback: 'PriyaSol’s AI program gave me the confidence to explore a new tech field. The project-based learning was amazing!',
     avatar: 'https://i.pravatar.cc/150?img=33',
   },
-  {
-    name: 'Sneha Patel',
-    feedback: 'I loved the real-world assignments and support from trainers. It was a great step toward becoming a frontend developer.',
-    avatar: 'https://i.pravatar.cc/150?img=45',
-  },
+  // {
+  //   name: 'Sneha Patel',
+  //   feedback: 'I loved the real-world assignments and support from trainers. It was a great step toward becoming a frontend developer.',
+  //   avatar: 'https://i.pravatar.cc/150?img=45',
+  // },
 ];
 
 export default function Testimonials() {
