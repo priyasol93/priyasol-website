@@ -6,11 +6,11 @@ const courses = [
     description: 'Core Java, Spring Boot, REST API, React, MySQL. Placement-ready training with live projects.',
     duration: '6 Weeks',
   },
-  {
-    title: 'AI for Beginners',
-    description: 'Fundamentals of AI, Python, ML basics, and real-world applications for beginners.',
-    duration: '4 Weeks',
-  },
+  // {
+  //   title: 'AI for Beginners',
+  //   description: 'Fundamentals of AI, Python, ML basics, and real-world applications for beginners.',
+  //   duration: '4 Weeks',
+  // },
   {
     title: 'Frontend Web Development',
     description: 'HTML, CSS, JavaScript, React basics. Build responsive websites from scratch.',
