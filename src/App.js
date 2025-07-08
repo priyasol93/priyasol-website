@@ -1,14 +1,38 @@
 import React from 'react';
-import HeroSection from './components/HeroSection';
-import Courses from './components/Courses';
-import Testimonials from './components/Testimonials';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Container } from "@mui/material";
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Programs from "./components/Programs";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div>
-      <HeroSection />
-      <Courses />
-      <Testimonials />
+       <Router>
+      <Navbar />
+      <Container maxWidth="lg">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <About />
+                <Programs />
+                <Contact />
+              </>
+            }
+          />
+          <Route path="/about" element={<About />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </Container>
+      <Footer />
+    </Router>
     </div>
   );
 }
