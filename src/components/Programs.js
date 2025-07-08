@@ -26,7 +26,7 @@ const programs = [
 
 function Programs() {
   return (
-    <Box mt={4}>
+    <Box id="programs" sx={{ paddingTop: "80px", scrollMarginTop: "100px" }}>
       <Typography variant="h4" gutterBottom>
         Our Programs
       </Typography>

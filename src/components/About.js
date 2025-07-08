@@ -3,7 +3,7 @@ import { Typography, Box } from "@mui/material";
 
 function About() {
   return (
-    <Box mt={4}>
+    <Box id="about" sx={{ paddingTop: "80px", scrollMarginTop: "100px" }}>
       <Typography variant="h4" gutterBottom>
         About PriyaSol
       </Typography>

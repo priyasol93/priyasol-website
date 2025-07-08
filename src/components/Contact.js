@@ -4,7 +4,7 @@ import { Email, LinkedIn } from "@mui/icons-material";
 
 function Contact() {
   return (
-    <Box mt={4}>
+    <Box id="contact" sx={{ paddingTop: "80px", scrollMarginTop: "100px" }}>
       <Typography variant="h4" gutterBottom>
         Contact Us
       </Typography>
