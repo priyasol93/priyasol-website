@@ -96,7 +96,15 @@ function Programs() {
       <Grid container spacing={3}>
         {trendingCourses.map((course, index) => (
           <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card sx={{ height: "100%", border: "1px solid #e0e0e0", borderRadius: "16px" }}>
+            <Card sx={{ height: "100%", border: "1px solid #e0e0e0", borderRadius: "16px" ,
+            transition: "transform 0.3s, box-shadow 0.3s", // Smooth transition
+    "&:hover": {
+      transform: "translateY(-8px)",
+      boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.1)",
+      borderColor: "#1976d2", 
+    }
+
+            }}>
               <CardContent>
                 {/* <Chip label="Trending" color="secondary" size="small" sx={{ mb: 1 }} /> */}
                 <Typography variant="h6" fontWeight={600}>{course.title}</Typography>

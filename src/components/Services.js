@@ -43,7 +43,14 @@ const Services = () => {
           <Grid item xs={12} md={4} key={index}  sx={{
     mb: { xs: 3, md: 0 }, // Margin bottom only in mobile view
   }}>
-            <Card sx={{ height: "100%", p: 2 ,border: "1px solid #e0e0e0", borderRadius: "16px"}}>
+            <Card sx={{height: "100%", p: 2 ,border: "1px solid #e0e0e0", borderRadius: "16px",
+                transition: "transform 0.3s, box-shadow 0.3s", // Smooth transition
+    "&:hover": {
+      transform: "translateY(-8px)",
+      boxShadow: "0px 8px 20px rgba(0, 0, 0, 0.1)",
+      borderColor: "#1976d2", // Optional: highlight border on hover
+    }
+                }}>
               <CardContent sx={{ textAlign: "center" }}>
                 <Box>{service.icon}</Box>
                 <Typography variant="h6" fontWeight="bold" sx={{ mt: 2 }}>
