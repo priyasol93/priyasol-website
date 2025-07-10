@@ -5,7 +5,7 @@ import heroBanner from "../assets/hero-banner.jpg";
 
 const Hero = () => {
   return (
-    <Box sx={{ py: 6, px: { xs: 2, md: 6 }, backgroundColor: "white" }}>
+    <Box id="home" sx={{  pt: { xs: 10, md: 12 },py: 6, px: { xs: 2, md: 6 }, backgroundColor: "white" }}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6}>
           <Typography variant="h3" fontWeight="bold" gutterBottom>
@@ -41,3 +41,6 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
+// src/components/Hero.js
