@@ -177,10 +177,9 @@ const Navbar = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: '#ffffff',
-          color: '#1c1c3c',
-          boxShadow: 1,
-          zIndex: (theme) => theme.zIndex.drawer + 1,
+           background: "linear-gradient(to right, #ffffff, #f0f4f8)",
+        boxShadow: 1,
+    zIndex: (theme) => theme.zIndex.drawer + 1,
         }}
       >
         <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
@@ -206,7 +205,23 @@ const Navbar = () => {
                   component={HashLink}
                   smooth
                   to={item.to}
-                  sx={{ color: '#1c1c3c', mx: 1 }}
+                  
+         sx={{
+    fontFamily: 'Poppins, sans-serif',
+    fontWeight: 500,
+    fontSize: '1rem',
+    textTransform: 'none',
+    color:'#1c1c3c',
+    // color: '#1c1c3c',
+    mx: 1,
+    transition: 'all 0.3s ease-in-out',
+    '&:hover': {
+      // color:'#1c1c3c',
+      color: '#0077b6', // Accent color
+      borderBottom: '2px solid #0077b6',
+      backgroundColor: 'transparent',
+    },
+  }}
                 >
                   {item.label}
                 </Button>

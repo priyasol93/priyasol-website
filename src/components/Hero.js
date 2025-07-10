@@ -5,10 +5,15 @@ import heroBanner from "../assets/hero-banner.jpg";
 
 const Hero = () => {
   return (
-    <Box id="home" sx={{  pt: { xs: 10, md: 12 },py: 6, px: { xs: 2, md: 6 }, backgroundColor: "white" }}>
+    <Box id="home" sx={{  pt: { xs: 10, md: 12 },py: 6, px: { xs: 2, md: 6 }, backgroundColor: "white"}}>
       <Grid container spacing={4} alignItems="center">
         <Grid item xs={12} md={6}>
-          <Typography variant="h3" fontWeight="bold" gutterBottom>
+          <Typography variant="h3" fontWeight="bold" gutterBottom sx={{
+    fontWeight: "bold",
+    background: "linear-gradient(90deg, #1c1c3c, #00A8E8)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  }}>
             Empowering Your Tech Career
           </Typography>
           <Typography variant="body1" mb={3}>

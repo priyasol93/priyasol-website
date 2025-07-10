@@ -5,7 +5,12 @@ import { Email, LinkedIn } from "@mui/icons-material";
 function Contact() {
   return (
     <Box id="contact" sx={{ paddingTop: "80px", scrollMarginTop: "100px" }}>
-      <Typography variant="h4" gutterBottom>
+      <Typography variant="h4" gutterBottom sx={{
+    fontWeight: "bold",
+    background: "linear-gradient(to right, #1c1c3c, #FF6B35)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  }}>
         Contact Us
       </Typography>
       <Typography>

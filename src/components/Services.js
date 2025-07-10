@@ -35,7 +35,12 @@ const Services = () => {
           border: "1px solid #fffff",
           borderRadius: "16px"
   }}>
-      <Typography variant="h4" align="center" gutterBottom fontWeight="bold">
+      <Typography variant="h4" align="center" gutterBottom fontWeight="bold" sx={{
+    fontWeight: "bold",
+    background: "linear-gradient(to right, #1c1c3c, #FF6B35)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
+  }}>
         Our Services
       </Typography>
       <Grid container spacing={4} justifyContent="center">
